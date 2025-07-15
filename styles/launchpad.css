@@ -299,3 +299,84 @@ nav.navbar {
 
 
 
+.focus-better-section {
+    text-align: center;
+    padding:80px 20px; 
+    background-color: #fcfcfc; 
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin: 0 auto; 
+    z-index: 1;
+}
+
+.focus-better-section .content-wrapper {
+    margin-bottom: 50px; 
+}
+
+.focus-better-section h2 {
+    font-size: 3.5em; 
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.focus-better-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-started-btn {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3; 
+}
+
+.focus-better-section .image-wrapper img {
+    width: auto;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+    .focus-better-section {
+        padding: 60px 15px;
+    }
+    .focus-better-section h2 {
+        font-size: 2.5em; /
+    }
+    .focus-better-section p {
+        font-size: 1em;
+    }
+    .get-started-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .focus-better-section .content-wrapper {
+        margin-bottom: 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .focus-better-section h2 {
+        font-size: 2em;
+    }
+}
