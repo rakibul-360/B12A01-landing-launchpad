@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 /* Optional overlay */
@@ -86,4 +87,61 @@ nav.navbar {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+}
+
+
+.action-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid ; /* Light blue border like your screenshot */
+  padding: 30px;
+  border-radius: 8px;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.action-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.action-left h2 {
+  font-size: 28px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.action-left p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.action-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.action-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
