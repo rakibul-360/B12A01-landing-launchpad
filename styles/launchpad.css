@@ -15,13 +15,15 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
-
+.main{
+  background-color: #cddbe0;
+}
 .hero {
   background-image: url(../Assets/Hero-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 300px;
   color: white;
   position: relative;
   padding: 30px 50px;
@@ -94,7 +96,7 @@ nav.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid ; /* Light blue border like your screenshot */
+ border: none;
   padding: 30px;
   border-radius: 8px;
   gap: 30px;
@@ -142,7 +144,7 @@ nav.navbar {
 
 .action-right img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 12px;
 }
 
@@ -169,7 +171,7 @@ nav.navbar {
 
 .stat-item h3 {
   font-size: 36px;
-  color: #007bff; /* নীল রঙ */
+  color: #007bff; 
   margin: 0;
 }
 
@@ -177,4 +179,123 @@ nav.navbar {
   font-size: 16px;
   color: #666;
 }
+
+
+
+
+.user-reviews-section {
+    text-align: center;
+    padding: 40px 20px; 
+    background-color: #f4f4f4; 
+    margin-bottom: 60px;
+}
+
+.user-reviews-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+.users{
+  text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-shrink: 0;
+}
+
+.review-card .stars img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 2px;
+    vertical-align: middle; 
+}
+
+.review-card h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: auto; 
+}
+
+.reviewer-avatar {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 15px;
+    object-fit: cover; /
+}
+
+.reviewer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+@media (max-width: 992px) {
+    .review-card {
+        width: calc(50% - 30px);
+        max-width: 350px; 
+    }
+    .reviews-container {
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 25px;
+    }
+    .review-card {
+        width: 90%; 
+        max-width: 400px; 
+    }
+    .user-reviews-section h2 {
+        font-size: 2em; 
+    }
+}
+
+
 
