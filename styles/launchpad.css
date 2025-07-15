@@ -308,7 +308,7 @@ nav.navbar {
     width: auto;
     height: auto;
     align-items: center;
-    margin: 0 auto; 
+    margin: 60px; 
     z-index: 1;
 }
 
@@ -380,3 +380,112 @@ nav.navbar {
         font-size: 2em;
     }
 }
+
+
+
+.touch-and-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+}
+
+.touch-and-form-left {
+    flex: 1;
+    padding-right: 40px;
+    min-width: 300px; 
+}
+
+.touch-and-form-left h1 {
+    font-size: 3em;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.touch-and-form-right {
+    flex: 1;
+    min-width: 300px; 
+}
+
+.touch-and-form-contact-form { 
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .touch-and-form-section {
+        flex-direction: column; 
+        padding: 30px;
+    }
+
+    .touch-and-form-left {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center; 
+    }
+
+    .touch-and-form-left h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .touch-and-form-left h1 {
+        font-size: 2em;
+    }
+    .touch-and-form-section {
+        padding: 20px;
+    }
+}
+
